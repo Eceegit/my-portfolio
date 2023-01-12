@@ -7,7 +7,10 @@ module.exports = {
     extend: {},
     fontFamily: {
       signature: ["Great Vibes"]
-    }
+    },
+    // colors: {
+    //   'big-stone': "#172740"
+    // }
   },
   plugins: [],
 }

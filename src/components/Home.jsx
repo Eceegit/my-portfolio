@@ -23,7 +23,7 @@ const Home = () => {
             like React and Tailwind CSS
           </p>
           <div>
-            <button className="group flex items-center w-fit px-6 py-4 my-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white cursor-pointer ">
+            <button className="group flex items-center w-fit px-6 py-4 my-2 rounded-md bg-gradient-to-r from-[#172740] to-blue-400 text-white cursor-pointer ">
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <HiArrowRight size={25} className="ml-1"/>
