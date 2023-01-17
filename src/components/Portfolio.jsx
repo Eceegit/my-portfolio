@@ -11,22 +11,26 @@ import reactParallax from '../assets/portfolio/reactParallax.jpg'
 import reactWeather from '../assets/portfolio/reactWeather.jpg'
 // reactCalculator
 import usestate from '../assets/portfolio/usestate.jpg'
+import afrinat from '../assets/portfolio/afrinat.png'
+
+import dictionary from '../assets/portfolio/dictionary.png'
 
 const Portfolio = () => {
     const projects  = [
         {
             id: 1,
-            image: arrayDestruct,
-            demo: 'https://github.com',
-            code: 'https://github.com'
+            image: afrinat,
+            demo: 'https://second-semes-exam.web.app/',
+            code: 'https://github.com/Eceegit/AltSchoolS2-Exam'
         },
         {
             id: 2,
-            image: installNode,
-            demo: 'https://github.com',
-            code: 'https://github.com'
+            image: dictionary,
+            demo: 'https://my-pocket-dictionary.netlify.app/',
+            code: 'https://github.com/Eceegit/my-pocket-dictionary/tree/master/dictionary/dictionary'
         },
         {
+            // my-portfolio
             id: 3,
             image: navbar,
             demo: 'https://github.com',
