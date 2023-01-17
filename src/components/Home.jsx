@@ -1,11 +1,12 @@
 import React from "react";
 import HeroImage from "../assets/hero-image.jpeg";
 import { HiArrowRight } from "react-icons/hi";
+import {Link} from 'react-scroll'
 
 const Home = () => {
   return (
     <div
-      name=""
+      name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div
@@ -23,12 +24,12 @@ const Home = () => {
             like React and Tailwind CSS
           </p>
           <div>
-            <button className="group flex items-center w-fit px-6 py-4 my-2 rounded-md bg-gradient-to-r from-[#172740] to-blue-400 text-white cursor-pointer ">
+            <Link to="portfolio" smooth duration={500} className="group flex items-center w-fit px-6 py-4 my-2 rounded-md bg-gradient-to-r from-[#172740] to-blue-400 text-white cursor-pointer ">
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <HiArrowRight size={25} className="ml-1"/>
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 

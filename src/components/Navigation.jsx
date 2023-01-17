@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {FaTimes, FaBars} from 'react-icons/fa'
+import {Link} from 'react-scroll'
 
 const Navigation = () => {
         //state to handle nav icons
@@ -36,7 +37,11 @@ const Navigation = () => {
        
         <ul className='hidden md:flex'>
             {links.map(({id,link}) => ( 
-                <li key={id} className='px-4 cursor-pointer capitalize font-bold text-gray-500 hover:scale-105 duration-200 '>{link}</li>      
+                <li key={id} className='px-4 cursor-pointer capitalize font-bold text-gray-500 hover:scale-105 duration-200 '>
+                  <Link to={link} smooth duration={500}>
+                    {link}
+                  </Link>
+                </li>      
             ))}
         </ul>
         
@@ -48,7 +53,11 @@ const Navigation = () => {
           nav ? (<ul className='flex flex-col justify-center items-center absolute top-0 
           left-0 w-full h-screen text-gray-500 bg-gradient-to-b from-black to-gray-800 '>
             {links.map(({id,link}) => ( 
-                <li key={id} className='text-4xl capitalize cursor-pointer py-6 px-4'>{link}</li>      
+                <li key={id}  className='text-4xl capitalize cursor-pointer py-6 px-4'>
+                  <Link to={link} onClick={() => setNav(!nav)} smooth duration={500}>
+                    {link}
+                  </Link>
+                </li>      
             ))}
           </ul>) : " "
         }
