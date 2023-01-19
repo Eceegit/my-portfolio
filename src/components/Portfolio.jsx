@@ -15,6 +15,8 @@ import afrinat from '../assets/portfolio/afrinat.png'
 
 import dictionary from '../assets/portfolio/dictionary.png'
 
+import calculator from '../assets/portfolio/calculator.png'
+
 const Portfolio = () => {
     const projects  = [
         {
@@ -38,9 +40,9 @@ const Portfolio = () => {
         },
         {
             id: 4,
-            image: reactParallax,
-            demo: 'https://github.com',
-            code: 'https://github.com'
+            image: calculator,
+            demo: 'https://my-react-app-calculator.netlify.app/',
+            code: 'https://github.com/Eceegit/my-react-calculator-app'
         },
         {
             id: 5,
