@@ -69,8 +69,8 @@ const Portfolio = () => {
                 projects.map(({id,image,demo,code,name}) => (
                     <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                     <img src={image} alt="" className='rounded-md duration-200 hover:scale-105' />
-                    <span className='text-center text-xl text-gray-500 pt-6 pl-4'>{name}</span>
-                    <div className='flex items-center justify-center'>
+                    <span className='text-xl  text-gray-500 font-bold pt-6 flex justify-center'>{name}</span>
+                    <div className='flex items-center justify-center  '>
                         <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={demo} target='_blank' rel='noreferrer'>Demo</a></button>
                         <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={code} target='_blank' rel='noreferrer'>Code</a></button>
                     </div>
