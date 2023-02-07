@@ -1,33 +1,27 @@
 import React from 'react'
-// myPortfolio
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg' 
-// mockup
-import installNode from '../assets/portfolio/installNode.jpg'
-// teaUp
-import navbar from '../assets/portfolio/navbar.jpg'
-// afriNat
-import reactParallax from '../assets/portfolio/reactParallax.jpg'
-// pocketDiction
-import reactWeather from '../assets/portfolio/reactWeather.jpg'
-// reactCalculator
-import usestate from '../assets/portfolio/usestate.jpg'
+
 import afrinat from '../assets/portfolio/afrinat.png'
 
 import dictionary from '../assets/portfolio/dictionary.png'
+import portfolio from '../assets/portfolio/portfolio.png'
+
 
 import calculator from '../assets/portfolio/calculator.png'
 import tipCalculatorJS from '../assets/portfolio/tipCalculatorJS.png'
+import responsiveDesign from '../assets/portfolio/responsiveDesign.png'
 
 const Portfolio = () => {
     const projects  = [
         {
             id: 1,
+            name: 'React Functionalities',
             image: afrinat,
             demo: 'https://second-semes-exam.web.app/',
             code: 'https://github.com/Eceegit/AltSchoolS2-Exam'
         },
         {
             id: 2,
+            name: 'React Dicitionary',
             image: dictionary,
             demo: 'https://my-pocket-dictionary.netlify.app/',
             code: 'https://github.com/Eceegit/my-pocket-dictionary/tree/master/dictionary/dictionary'
@@ -35,27 +29,31 @@ const Portfolio = () => {
         {
             // my-portfolio
             id: 3,
-            image: navbar,
-            demo: 'https://github.com',
-            code: 'https://github.com'
+            name: 'Portfolio',
+            image: portfolio,
+            demo: 'https://my-portfolio-b2abf.web.app/',
+            code: 'https://github.com/Eceegit/my-portfolio'
         },
         {
             id: 4,
+            name: 'React Calculator',
             image: calculator,
             demo: 'https://my-react-app-calculator.netlify.app/',
             code: 'https://github.com/Eceegit/my-react-calculator-app'
         },
         {
             id: 5,
+            name: 'JavaScript Tip Calculator',
             image: tipCalculatorJS,
             demo: 'https://tip-calculator-vercel.vercel.app/',
             code: 'https://github.com/Eceegit/tip-calculator-vercel'
         },
         {
             id: 6,
-            image: usestate,
-            demo: 'https://github.com',
-            code: 'https://github.com'
+            name: 'Responsive Design',
+            image: responsiveDesign,
+            demo: 'https://tea-up-naija.vercel.app/',
+            code: 'https://github.com/Eceegit/Tea-up-Naija.git'
         },
     ]
   return (
@@ -68,9 +66,10 @@ const Portfolio = () => {
 
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 '>
                {
-                projects.map(({id,image,demo,code}) => (
+                projects.map(({id,image,demo,code,name}) => (
                     <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                     <img src={image} alt="" className='rounded-md duration-200 hover:scale-105' />
+                    <span className='text-center text-xl text-gray-500 pt-6 pl-4'>{name}</span>
                     <div className='flex items-center justify-center'>
                         <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={demo} target='_blank' rel='noreferrer'>Demo</a></button>
                         <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'><a href={code} target='_blank' rel='noreferrer'>Code</a></button>
