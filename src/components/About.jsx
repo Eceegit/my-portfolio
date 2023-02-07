@@ -8,12 +8,12 @@ const About = () => {
                 <h4 className='text-4xl md:text-5xl font-bold inline border-b-4 border-gray-500'>About</h4>
             </div>
 
-            <p className='text-xl mt-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia quia distinctio veritatis minus nostrum perspiciatis veniam alias expedita doloribus quaerat, autem numquam magnam explicabo eveniet, sunt in culpa temporibus odio. Officia esse optio error, dignissimos deserunt recusandae voluptas eius expedita ipsam totam, iure eum facilis magnam quaerat ea a.
+            <p className='text-xl mt-20'>
+            Esther Raphael is a Frontend Developer and a tech enthusiast. She is currently a student at AltSchoolAfrica School of Engineering. She volunteered as an Operations Lead at Empower Her Community for a year. She started volunteering in the year 2017 for programs such as IWD outreaches and medical outreaches in different states in Nigeria. 
             </p>
-
             <br/>
-
-            <p className='text-xl'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum voluptatem quisquam reiciendis unde. Fugiat et ducimus nihil pariatur excepturi sed dolorum! Maxime veniam quibusdam nobis commodi provident ut voluptatem quam voluptatibus porro at in vitae minima, quia id, atque ducimus molestias neque impedit cum eligendi fugit voluptates eveniet magnam. Sint!
+            <p className='text-xl'>
+            Her journey in tech started fully in the year 2021 at Midtown Tech Hub. She volunteered in the EHC bootcamp 1.0 in the year 2021, where 30 girls where successfully trained in different fields in tech. She aspires to be a world class software engineer.
             </p>
         </div>
 

@@ -16,6 +16,7 @@ import afrinat from '../assets/portfolio/afrinat.png'
 import dictionary from '../assets/portfolio/dictionary.png'
 
 import calculator from '../assets/portfolio/calculator.png'
+import tipCalculatorJS from '../assets/portfolio/tipCalculatorJS.png'
 
 const Portfolio = () => {
     const projects  = [
@@ -46,9 +47,9 @@ const Portfolio = () => {
         },
         {
             id: 5,
-            image: reactWeather,
-            demo: 'https://github.com',
-            code: 'https://github.com'
+            image: tipCalculatorJS,
+            demo: 'https://tip-calculator-vercel.vercel.app/',
+            code: 'https://github.com/Eceegit/tip-calculator-vercel'
         },
         {
             id: 6,
